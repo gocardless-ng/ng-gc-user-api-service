@@ -9,7 +9,7 @@ angular.module('ngGcUserApiService', [
     return HttpFactory.create({
       url: '/api/user'
     }, {
-      'findOne': { method: 'GET' }
+      'findOne': { method: 'GET', cache: true }
     });
 
   }

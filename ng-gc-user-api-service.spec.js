@@ -17,6 +17,8 @@ describe('UserApiServiceSpec', function(){
   it('#findOne', function() {
     $httpBackend.expectGET('/api/user').respond(200);
     UserApiService.findOne();
+    // Cached
+    UserApiService.findOne();
   });
 
 });
